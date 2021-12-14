@@ -22,3 +22,15 @@ for sub_folder in ravdess_list_folder:
         ravdess_list.append(ravdess_path+"/"+sub_folder+"/"+path)
 
 ravdess_list[:20]
+
+ravdess_list[6].split('/')[-1]
+savee_path = r"dataset\AudioData"
+savee_list_folder = os.listdir(savee_path)
+savee_list_folder
+savee_list = []
+
+for sub_folder in savee_list_folder:
+    sub_folder_list = os.listdir(savee_path+"/"+sub_folder)
+    for path in sub_folder_list:
+        savee_list.append(savee_path+"/"+sub_folder+"/"+path)
+        savee_list[:20]
